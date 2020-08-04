@@ -6,10 +6,10 @@ var età = parseInt(prompt('Quanti anni hai?'));
 var prezzoBiglietto = distanza * 0.21;
 // Eventuale sconto per minorenni e over-65
 if (età < 18) {
-  var prezzoBigliettoScontato = ((prezzoBiglietto*20)/100);
+  var prezzoBigliettoScontato = ((prezzoBiglietto*20)/100).toFixed(2);
   document.getElementById('totale').innerHTML="Il costo del suo biglietto è: €"+prezzoBigliettoScontato;
 } else if (età >= 65) {
-  var prezzoBigliettoScontato = ((prezzoBiglietto*40)/100);
+  var prezzoBigliettoScontato = ((prezzoBiglietto*40)/100).toFixed(2);
   document.getElementById('totale').innerHTML="Il costo del suo biglietto è: €"+prezzoBigliettoScontato;
 } else {
   document.getElementById('totale').innerHTML="Il costo del suo biglietto è: €"+prezzoBiglietto;
