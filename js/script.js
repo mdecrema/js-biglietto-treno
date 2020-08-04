@@ -11,10 +11,10 @@ var scontoOver65 = ((prezzoBiglietto*40)/100).toFixed(2);
 
 // Calcolo Totale
 if (età < 18) {
-  var prezzoBigliettoScontato = prezzoBiglietto - scontoMinorenni;
+  var prezzoBigliettoScontato = (prezzoBiglietto - scontoMinorenni).toFixed(2);
   document.getElementById('totale').innerHTML="Il costo del suo biglietto è: €"+prezzoBigliettoScontato;
 } else if (età >= 65) {
-  var prezzoBigliettoScontato = prezzoBiglietto - scontoOver65;
+  var prezzoBigliettoScontato = (prezzoBiglietto - scontoOver65).toFixed(2);
   document.getElementById('totale').innerHTML="Il costo del suo biglietto è: €"+prezzoBigliettoScontato;
 } else {
   document.getElementById('totale').innerHTML="Il costo del suo biglietto è: €"+prezzoBiglietto;
