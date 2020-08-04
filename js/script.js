@@ -5,9 +5,9 @@ var età = parseInt(prompt('Quanti anni hai?'));
 // Calcolo costo del biglietto in base alla tariffa di 0.21€/Km
 var prezzoBiglietto = distanza * 0.21;
 // Eventuale sconto per minorenni
-var scontoMinorenni = ((prezzoBiglietto*20)/100).toFixed(2);
+var scontoMinorenni = ((prezzoBiglietto*20)/100);
 // Eventuale sconto per over-65
-var scontoOver65 = ((prezzoBiglietto*40)/100).toFixed(2);
+var scontoOver65 = ((prezzoBiglietto*40)/100);
 
 // Calcolo Totale
 if (età < 18) {
